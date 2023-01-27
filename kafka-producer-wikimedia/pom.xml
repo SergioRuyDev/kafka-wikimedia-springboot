@@ -11,6 +11,23 @@
 
     <artifactId>kafka-producer-wikimedia</artifactId>
     <packaging>jar</packaging>
+    <dependencies>
+<!--        EVENT SOURCE DEPENDENCY-->
+        <dependency>
+            <groupId>com.launchdarkly</groupId>
+            <artifactId>okhttp-eventsource</artifactId>
+            <version>2.6.0</version>
+        </dependency>
+<!--        SERIALIZER DEPENDENCIES-->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+        </dependency>
+    </dependencies>
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
